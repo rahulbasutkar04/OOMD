@@ -29,7 +29,7 @@
 8. `sendMessage()`:Method to send a notification using the specified notification service.
 
 ## Polymorphism
-The `sendMessage()` can be overridden like to Send Mail also and can Send Message through various Different Channels of Communivation.
+The `sendMessage()` can be overridden like to Send Mail also and can Send Message through various Different Channels of Communication.
 
 
 ## Java Class and Methods Example
