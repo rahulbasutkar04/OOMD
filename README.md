@@ -37,7 +37,7 @@ The `sendMessage()` can be overridden like to Send Mail also and can Send Messag
 This Is how it looks Like
 
 ```java
-public class UnUsualSpend {
+public class UnUsualSpend{
     private String userName;
     private String userEmail;
     private String cardNumber;
@@ -47,20 +47,17 @@ public class UnUsualSpend {
     private Double currentMonthSpent;
     private Double lastMonthSpent;
 
-    public MyClass(String userName, String userEmail, String cardNumber) {
+    public UnUsualSpend(String userName, String userEmail, String cardNumber){
         this.userName = userName;
         this.userEmail = userEmail;
         this.cardNumber = cardNumber;
     }
-
     public String getUserName() {
         return userName;
     }
-
     public String getUserEmail() {
         return userEmail;
     }
-
     public String getCardNumber() {
         return cardNumber;
     }
@@ -68,23 +65,18 @@ public class UnUsualSpend {
     public Enum getCategories() {
         return categories;
     }
-
     public Double getTotalSpent() {
         return totalSpent;
     }
-
     public Map<Enum, Double> getSpentOnEachCategory() {
         return spentOnEachCategory;
     }
-
     public Double getCurrentMonthSpent() {
         return currentMonthSpent;
     }
-
     public Double getLastMonthSpent() {
         return lastMonthSpent;
     }
-
     public void sendMessage() {
         service.sendNotification(userEmail, "Unusual spending....");
     }
