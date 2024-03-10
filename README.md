@@ -41,7 +41,7 @@ public class UnUsualSpend{
     private String userName;
     private String userEmail;
     private String cardNumber;
-    provate Enum categories;
+    private Enum categories;
     private Double totalSpent;
     private Map<Enum, Double> spentOnEachCategory;
     private Double currentMonthSpent;
