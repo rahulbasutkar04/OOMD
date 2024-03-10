@@ -7,7 +7,7 @@
 ### Private:
 1. `userName`:String->Represents the name of the user.
 2. `userEmail`:String->Represents the email address of the user.
-3. `cardNumber`:String->Represents the credit card number associated with the user.
+3. `cardNumber`:Long->Represents the credit card number associated with the user.
 
 ### Public:
 1. `categories`:Enum->Represents spending categories.
@@ -20,7 +20,7 @@
 
 #### Public:
 1. `getUserName()`:String->Returns the user's name.
-2. `getCreditCardNumber()`:String->Returns the user's credit card number.
+2. `getCreditCardNumber()`:Long->Returns the user's credit card number.
 3. `getUserEmail()`:String->Returns the user's email address.
 4. `getTotalSpent()`:Double->Returns the total amount spent.
 5. `getSpentOnEachCategory()`:Map<Enum,Double>->Returns the amount spent on each category.
@@ -40,14 +40,14 @@ This Is how it looks Like
 public class UnUsualSpend{
     private String userName;
     private String userEmail;
-    private String cardNumber;
+    private Long cardNumber;
     private Enum categories;
     private Double totalSpent;
     private Map<Enum, Double> spentOnEachCategory;
     private Double currentMonthSpent;
     private Double lastMonthSpent;
 
-    public UnUsualSpend(String userName, String userEmail, String cardNumber){
+    public UnUsualSpend(String userName, String userEmail, long cardNumber){
         this.userName = userName;
         this.userEmail = userEmail;
         this.cardNumber = cardNumber;
@@ -58,7 +58,7 @@ public class UnUsualSpend{
     public String getUserEmail() {
         return userEmail;
     }
-    public String getCardNumber() {
+    public long getCardNumber() {
         return cardNumber;
     }
 
