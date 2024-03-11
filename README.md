@@ -20,8 +20,8 @@
 
 ### VoteCalculator (Private)
 #### States:
-- `cityNames`: List<String> - Stores the names of cities.
-- `voteWithParties`: List<Map<String, Integer>> - Stores votes mapped to parties.
+- `cityNames`: List< String >  - Stores the names of cities.
+- `voteWithParties`: List < Map<String, Integer > > - Stores votes mapped to parties.
 
 #### Behavior:
 - `calculateVotes()`: Private -> Returns a Map.
