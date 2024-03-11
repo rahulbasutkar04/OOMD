@@ -17,7 +17,7 @@
 2.  `TransactionManager`:Long AccountNumber(private).
 3.  `Spents`:Long AmountSpent(private),Date DateOfSpent(public),String NameOfProduct(public),Long priceOfProduct(public)
 4.  `categories`:Enum TypesOfCategory(public).
-5.  `AlertMeaage`:String MessageToSent(private),String reciversaddress(private).
+5.  `AlertMeaage`:String MessageToSent(private),String reciversaddress(private).(polymorphism)
     
 
 ## Behaviors of CustomerDetails Class
