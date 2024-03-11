@@ -4,15 +4,15 @@
 
 ### DataExtractor (Public)
 #### States:
-- `fileReader`: File - Used for file traversal and handling.
-- `parsed`: boolean - Checks if the file is parsed or not.
+- `fileReader`: File -> Used for file traversal and handling.
+- `parsed`: boolean -> Checks if the file is parsed or not.
 
 #### Behavior:
 - `getExtractedData()`: Private -> Returns a List of Map.
 
 ### PartyName (Enum) (Public)
 #### States:
-- `partyName`: String - Represents the name of the party.
+- `partyName`: String -> Represents the name of the party.
 
 #### Behavior:
 - `PartyName(partyCode)`: Constructor.
@@ -20,8 +20,8 @@
 
 ### VoteCalculator (Private)
 #### States:
-- `cityNames`: List< String >  - Stores the names of cities.
-- `voteWithParties`: List < Map<String, Integer > > - Stores votes mapped to parties.
+- `cityNames`: List < String > -> Stores the names of cities.
+- `voteWithParties`: List < Map<String, Integer > > -> Stores votes mapped to parties.
 
 #### Behavior:
 - `calculateVotes()`: Private -> Returns a Map.
@@ -30,12 +30,12 @@
 
 ### DisplayResult (Public)
 #### States:
-- `cityName`: String - Represents the name of the city.
-- `partyName`: String - Represents the name of the party.
-- `votes`: Long - Represents the number of votes.
+- `cityName`: String -> Represents the name of the city.
+- `partyName`: String -> Represents the name of the party.
+- `votes`: Long -> Represents the number of votes.
 
 #### Behavior:
-- `Display()`: Public - Displays the result.
+- `Display()`: Public -> Displays the result.
 
 
 
