@@ -1,28 +1,43 @@
-# ELECTION RESULT DESIGN
+# Class Diagram for Election Result Management
 
 ## Classes:
-1. `DataExtractor`: public
-2. `Enum (PartyName)`: public
-3. `VoteCalculator`: private
-4. `VoteMapper`: private
-5. `DisplayManager`: public
 
-## States:
-- `dataFile`: File (private)
-- `mappedData`: Map (private)
-- `extractedData`: List of map (private)
-- `cityNames`: List< of string (private)
-- `partyName`: String (private)
+### DataExtractor (Public)
+#### States:
+- `fileReader`: File - Used for file traversal and handling.
+- `parsed`: boolean - Checks if the file is parsed or not.
 
-## Behavior:
-1. `getExtractedData()`: private -> returns List of Map.
-2. `getCityNames()`: private -> returns List of String.
-3. `getFullNameOfParty()`: private -> returns String.
-4. `getMappedData()`: private -> void.
-5. `voteComparator()`: private -> returns Map with party code and votes that have the highest count.
-6. `cityMapper()`: private -> void.
-7. `getResult(mappedData: Map<String, Long>)`: public -> returns void.
-8. `displayWinner()`: void
+#### Behavior:
+- `getExtractedData()`: Private -> Returns a List of Map.
+
+### PartyName (Enum) (Public)
+#### States:
+- `partyName`: String - Represents the name of the party.
+
+#### Behavior:
+- `PartyName(partyCode)`: Constructor.
+- `getPartyName()`: Returns the String name of the party.
+
+### VoteCalculator (Private)
+#### States:
+- `cityNames`: List<String> - Stores the names of cities.
+- `voteWithParties`: List<Map<String, Integer>> - Stores votes mapped to parties.
+
+#### Behavior:
+- `calculateVotes()`: Private -> Returns a Map.
+- `cityMapper()`: Private -> Maps cities and returns the result.
+- `getResult()`: Private -> Returns a List of Map.
+
+### DisplayResult (Public)
+#### States:
+- `cityName`: String - Represents the name of the city.
+- `partyName`: String - Represents the name of the party.
+- `votes`: Long - Represents the number of votes.
+
+#### Behavior:
+- `Display()`: Public - Displays the result.
+
+
 
 
 
